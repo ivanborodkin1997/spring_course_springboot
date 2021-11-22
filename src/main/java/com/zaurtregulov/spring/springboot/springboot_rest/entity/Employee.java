@@ -5,6 +5,7 @@ import javax.persistence.*;
 @Entity
 @Table(name = "employees")
 public class Employee {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
@@ -72,5 +73,6 @@ public class Employee {
     public void setSalary(int salary) {
         this.salary = salary;
     }
+
 }
 

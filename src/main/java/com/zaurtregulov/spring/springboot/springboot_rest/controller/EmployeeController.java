@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api")
-public class MyRESTController {
+public class EmployeeController {
 
     @Autowired
     private EmployeeService employeeService;
@@ -45,4 +45,5 @@ public class MyRESTController {
         employeeService.deleteEmployee(id);
         return "Employee with ID = " + id + " was deleted";
     }
+
 }
